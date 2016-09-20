@@ -1,12 +1,14 @@
 # Mercator SSO
-
 Single Sign-On component for [Mercator](https://github.com/humanmade/Mercator).
 
 Allows you to share cookies between all sites on the same subdomain.
 
-## Installation
+## Requirements
+Mercator requires WordPress 3.9 or newer for the new sunrise processes. Mercator
+also requires PHP 5.3+ due to the use of namespaced code.
 
-Simply include the file `sso.php` from your `sunrise.php` in the same way you include Mercator itself.
+## Installation
+Include the file `sso.php` from your `sunrise.php` in the same way you include Mercator itself.
 
 For example:
 
@@ -23,7 +25,6 @@ Optionally you can use `sso-multinetwork.php` as well if you're running
 a multinetwork site.
 
 ## Filters
-
 You can modify SSO behaviour for example in a local environment with the
 following filters in `sunrise.php`:
 
