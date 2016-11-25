@@ -59,7 +59,7 @@ function run_preflight() {
  */
 function bootstrap() {
 	add_action( 'wp_head',          __NAMESPACE__ . '\\head_js', -100 );
-	add_action( 'muplugins_loaded', __NAMESPACE__ . '\\initialize_cookie_domain' );
+	add_action( 'muplugins_loaded', __NAMESPACE__ . '\\initialize_cookie_domain', -100 );
 
 	// Callback handlers
 	add_action( 'wp_ajax_'        . ACTION_JS,        __NAMESPACE__ . '\\output_javascript_priv' );
